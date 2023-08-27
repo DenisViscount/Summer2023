@@ -1,33 +1,27 @@
-package task02;
+package main.task02;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
+
     public static void main(String[] args) {
-        ArrayList<Integer> intList = new ArrayList<>();
-        intList.add(1);
-        intList.add(2);
-        intList.add(8);
-        Util.printArrayList(intList);
 
+        List<Integer> integerList = List.of(1, 2, 3, 4, 5);
+        List<Double> doubleList = List.of(1.1, 2.2, 3.3, 4.4, 5.5);
 
-         Util.fillList(intList,1);
-        Util.printArrayList(intList);
+        System.out.println("Integer List:");
+        task02.NumberListPrinter.printNumberList(integerList);
 
-        Util.addList(intList,100);
-        Util.printArrayList(intList);
-
-        int number1 = Util.getList(intList,3);
-        System.out.println(number1);
-
-
-
-
-
-
+        System.out.println("Double List:");
+        task02.NumberListPrinter.printNumberList(doubleList);
 
 
 
     }
+
+
+
+
+
 
 }

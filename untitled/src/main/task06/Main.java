@@ -1,11 +1,17 @@
-package task06;
+package main.task06;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        BankAccount<String> bankAccount = new BankAccount<>("1000","12");
-        BankAccount<Integer> bankAccount1 = new BankAccount<>(1000,13);
-        BankAccount<Double> bankAccount2 = new BankAccount<>(1000.555,15.00);
 
+        List<Integer> integerList = List.of(1, 2, 3);
+        List<Number> numberList = new ArrayList<>();
 
+        ListElementCopier.copyElements(integerList, numberList);
+
+        System.out.println("Number List: " + numberList);
     }
+
 }
